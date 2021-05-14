@@ -23,28 +23,3 @@ public class Tuesday_Lambda_01 {
 	}
 
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// return slist.stream().filter(t->t.startsWith("a") && t.length() == 3).collect(Collectors.toList());
