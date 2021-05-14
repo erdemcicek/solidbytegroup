@@ -31,34 +31,3 @@ public class Tuesday_Lambda_03 {
 		scan.close();
 	}
 }
-
-
-
-
-
-
-
-
-//double avg = Arrays.stream(numbers).average().getAsDouble();
-//System.out.println("Average is "  + avg);
-//long count = Arrays.stream(numbers).filter(t->t>avg).count();
-//System.out.println("Number of values that are greater than average " + count);
-//Arrays.stream(numbers).filter(t->t>avg).forEach(System.out::println);
-
-
-
-
-
-
-
-
-
-
-
-
-
-//double average = Arrays.stream(numbers).average().getAsDouble();
-//System.out.println("Average is " + average);
-//System.out.println("Number of elements above the average is " + Arrays.stream(numbers).filter(t ->t>average).count());
-//System.out.println("Numbers that are above the average are ");
-//Arrays.stream(numbers).filter(t->t>average).forEach(System.out::println);
