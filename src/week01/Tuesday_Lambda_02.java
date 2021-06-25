@@ -17,7 +17,6 @@ import java.util.stream.Collectors;
 
 public class Tuesday_Lambda_02 {
 	
-
 	public static void main(String[] args) {
 		
 		List<Integer> list = List.of(3,44,46,57);
@@ -26,11 +25,9 @@ public class Tuesday_Lambda_02 {
 		List<Integer> l2 = new ArrayList<>();
 		l2.addAll(list);
 		System.out.println(l2);
-
-		
 	}
-
-	public static String commaSep(List<Integer> list) {
+	
+	private static String commaSep(List<Integer> list) {
 		
 //		return list.stream().map(t-> t%2==0 ? "e"+t : "o" + t).reduce("",(x,y)->x+","+y).substring(1);
 //		return list.stream().map(t-> t%2==0 ? "e"+t : "o" + t)
@@ -38,13 +35,12 @@ public class Tuesday_Lambda_02 {
 		//						supplier          ,        accumulator       ,    combiner
 //		return list.stream().map(t-> t%2==0 ? ",e"+t : ",o" + t)
 //				.collect( StringBuilder::new, StringBuilder::append, StringBuilder::append).toString().substring(1);
-		return list.stream().map(t-> t%2==0 ? "e"+t : "o" + t).collect(Collectors.joining(","));
-				
+		return list.stream().map(t-> t%2==0 ? "e"+t : "o" + t).collect(Collectors.joining(","));		
 	}
-	public static List<String> commaS(List<Integer> list){
+	
+	private static List<String> commaS(List<Integer> list){
 		
 //		return list.stream().map(t-> t%2==0 ? "e"+t : "o" + t).collect( ArrayList::new, ArrayList::add, ArrayList::addAll);
-		
 //		return list.stream().map(t-> t%2==0 ? "e"+t : "o" + t).collect(Collectors.toList());
 		
 		return list.stream().map( t-> t%2==0 ? "e"+t : "o" + t)
