@@ -11,15 +11,14 @@ import java.util.stream.Collectors;
 
 public class Tuesday_Lambda_01 {
 	
-	public static void main(String[] args) {
+	private static void main(String[] args) {
 		
 		List<String> list = List.of("abc", "aim", "add", "abcd", "klmn", "iyi");
 		System.out.println(separateStr(list));
 		
 	}
-	public static List<String> separateStr(List<String> slist){
+	private static List<String> separateStr(List<String> slist){
 		
 		return slist.stream().filter(t->t.startsWith("a") && t.length()==3).collect(Collectors.toList());
 	}
-
 }
